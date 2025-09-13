@@ -1,5 +1,5 @@
 CMakeFiles/merge_arrays_node.dir/src/merge_arrays_node.cpp.o: \
- /home/stephen/WisconsinAutonomous/challenges/merge_arrays/src/merge_arrays_node.cpp \
+ /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/src/merge_arrays_node.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \

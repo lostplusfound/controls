@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stephen/WisconsinAutonomous/challenges/merge_arrays
+CMAKE_SOURCE_DIR = /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stephen/WisconsinAutonomous/challenges/merge_arrays/build/merge_arrays
+CMAKE_BINARY_DIR = /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/stephen/WisconsinAutonomous/challenges/merge_arrays/build/merge_arrays && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stephen/WisconsinAutonomous/challenges/merge_arrays /home/stephen/WisconsinAutonomous/challenges/merge_arrays /home/stephen/WisconsinAutonomous/challenges/merge_arrays/build/merge_arrays /home/stephen/WisconsinAutonomous/challenges/merge_arrays/build/merge_arrays /home/stephen/WisconsinAutonomous/challenges/merge_arrays/build/merge_arrays/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

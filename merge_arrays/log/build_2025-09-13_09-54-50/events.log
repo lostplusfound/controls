@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.000552] (merge_arrays) JobQueued: {'identifier': 'merge_arrays', 'dependencies': OrderedDict()}
+[0.000783] (merge_arrays) JobStarted: {'identifier': 'merge_arrays'}
+[0.006336] (merge_arrays) JobProgress: {'identifier': 'merge_arrays', 'progress': 'cmake'}
+[0.007743] (merge_arrays) Command: {'cmd': ['/usr/bin/cmake', '/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays', '-DCMAKE_INSTALL_PREFIX=/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays'], 'cwd': '/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'stephen'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/stephen'), ('OLDPWD', '/home/stephen/WisconsinAutonomous/challenges/controls'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'stephen'), ('NAME', 'BOOK-GMRBBCFJSH'), ('WSL_INTEROP', '/run/WSL/21689_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-21.0.5.11-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Users/lijia/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lijia/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/lijia/.lmstudio/bin:/mnt/c/Users/lijia/AppData/Local/Muse Hub/lib:/mnt/c/Users/lijia/AppData/Local/Programs/Ollama:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099745] (-) TimerEvent: {}
+[0.155852] (merge_arrays) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199886] (-) TimerEvent: {}
+[0.300245] (-) TimerEvent: {}
+[0.361603] (merge_arrays) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.400387] (-) TimerEvent: {}
+[0.463709] (merge_arrays) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500534] (-) TimerEvent: {}
+[0.539789] (merge_arrays) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.543797] (merge_arrays) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.544476] (merge_arrays) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.544931] (merge_arrays) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.547779] (merge_arrays) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600669] (-) TimerEvent: {}
+[0.625358] (merge_arrays) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.630136] (merge_arrays) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.630400] (merge_arrays) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.630443] (merge_arrays) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.641898] (merge_arrays) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.700812] (-) TimerEvent: {}
+[0.728150] (merge_arrays) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.800964] (-) TimerEvent: {}
+[0.814887] (merge_arrays) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.901124] (-) TimerEvent: {}
+[0.912834] (merge_arrays) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.918571] (merge_arrays) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.927594] (merge_arrays) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.941228] (merge_arrays) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.958130] (merge_arrays) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001260] (-) TimerEvent: {}
+[1.005334] (merge_arrays) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.008595] (merge_arrays) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.101429] (-) TimerEvent: {}
+[1.201811] (-) TimerEvent: {}
+[1.302197] (-) TimerEvent: {}
+[1.402552] (-) TimerEvent: {}
+[1.450134] (merge_arrays) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.502703] (-) TimerEvent: {}
+[1.603053] (-) TimerEvent: {}
+[1.703540] (-) TimerEvent: {}
+[1.803931] (-) TimerEvent: {}
+[1.859280] (merge_arrays) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.904059] (-) TimerEvent: {}
+[2.004390] (-) TimerEvent: {}
+[2.104911] (-) TimerEvent: {}
+[2.205242] (-) TimerEvent: {}
+[2.305593] (-) TimerEvent: {}
+[2.405914] (-) TimerEvent: {}
+[2.506344] (-) TimerEvent: {}
+[2.585880] (merge_arrays) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.596259] (merge_arrays) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.606622] (-) TimerEvent: {}
+[2.675795] (merge_arrays) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.676118] (merge_arrays) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.706769] (-) TimerEvent: {}
+[2.740722] (merge_arrays) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.741352] (merge_arrays) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.789808] (merge_arrays) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.806899] (-) TimerEvent: {}
+[2.844143] (merge_arrays) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.844361] (merge_arrays) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/include>\n'}
+[2.844401] (merge_arrays) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.846872] (merge_arrays) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.850258] (merge_arrays) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.850391] (merge_arrays) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.851141] (merge_arrays) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.852549] (merge_arrays) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.858286] (merge_arrays) StdoutLine: {'line': b'-- Generating done\n'}
+[2.861092] (merge_arrays) StdoutLine: {'line': b'-- Build files have been written to: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays\n'}
+[2.870535] (merge_arrays) CommandEnded: {'returncode': 0}
+[2.871214] (merge_arrays) JobProgress: {'identifier': 'merge_arrays', 'progress': 'build'}
+[2.871240] (merge_arrays) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays', '--', '-j12', '-l12'], 'cwd': '/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'stephen'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/stephen'), ('OLDPWD', '/home/stephen/WisconsinAutonomous/challenges/controls'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'stephen'), ('NAME', 'BOOK-GMRBBCFJSH'), ('WSL_INTEROP', '/run/WSL/21689_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-21.0.5.11-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Users/lijia/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lijia/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/lijia/.lmstudio/bin:/mnt/c/Users/lijia/AppData/Local/Muse Hub/lib:/mnt/c/Users/lijia/AppData/Local/Programs/Ollama:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.901721] (merge_arrays) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/merge_arrays_node.dir/src/merge_arrays_node.cpp.o\x1b[0m\n'}
+[2.907044] (-) TimerEvent: {}
+[3.007389] (-) TimerEvent: {}
+[3.107742] (-) TimerEvent: {}
+[3.208111] (-) TimerEvent: {}
+[3.308562] (-) TimerEvent: {}
+[3.409022] (-) TimerEvent: {}
+[3.509449] (-) TimerEvent: {}
+[3.609871] (-) TimerEvent: {}
+[3.710279] (-) TimerEvent: {}
+[3.810710] (-) TimerEvent: {}
+[3.911118] (-) TimerEvent: {}
+[4.011544] (-) TimerEvent: {}
+[4.111976] (-) TimerEvent: {}
+[4.212436] (-) TimerEvent: {}
+[4.312867] (-) TimerEvent: {}
+[4.413297] (-) TimerEvent: {}
+[4.513695] (-) TimerEvent: {}
+[4.614111] (-) TimerEvent: {}
+[4.714571] (-) TimerEvent: {}
+[4.814996] (-) TimerEvent: {}
+[4.915447] (-) TimerEvent: {}
+[5.015859] (-) TimerEvent: {}
+[5.116302] (-) TimerEvent: {}
+[5.216770] (-) TimerEvent: {}
+[5.317158] (-) TimerEvent: {}
+[5.417541] (-) TimerEvent: {}
+[5.517926] (-) TimerEvent: {}
+[5.618321] (-) TimerEvent: {}
+[5.718708] (-) TimerEvent: {}
+[5.819236] (-) TimerEvent: {}
+[5.919669] (-) TimerEvent: {}
+[6.020222] (-) TimerEvent: {}
+[6.120811] (-) TimerEvent: {}
+[6.221335] (-) TimerEvent: {}
+[6.321771] (-) TimerEvent: {}
+[6.422180] (-) TimerEvent: {}
+[6.522647] (-) TimerEvent: {}
+[6.623030] (-) TimerEvent: {}
+[6.723423] (-) TimerEvent: {}
+[6.823802] (-) TimerEvent: {}
+[6.924186] (-) TimerEvent: {}
+[7.024629] (-) TimerEvent: {}
+[7.125250] (-) TimerEvent: {}
+[7.225896] (-) TimerEvent: {}
+[7.326285] (-) TimerEvent: {}
+[7.426666] (-) TimerEvent: {}
+[7.527079] (-) TimerEvent: {}
+[7.627487] (-) TimerEvent: {}
+[7.727869] (-) TimerEvent: {}
+[7.828357] (-) TimerEvent: {}
+[7.928967] (-) TimerEvent: {}
+[8.029433] (-) TimerEvent: {}
+[8.074916] (merge_arrays) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable merge_arrays_node\x1b[0m\n'}
+[8.129711] (-) TimerEvent: {}
+[8.230097] (-) TimerEvent: {}
+[8.330545] (-) TimerEvent: {}
+[8.348451] (merge_arrays) StdoutLine: {'line': b'[100%] Built target merge_arrays_node\n'}
+[8.357045] (merge_arrays) CommandEnded: {'returncode': 0}
+[8.358605] (merge_arrays) JobProgress: {'identifier': 'merge_arrays', 'progress': 'install'}
+[8.363940] (merge_arrays) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays'], 'cwd': '/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'stephen'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/stephen'), ('OLDPWD', '/home/stephen/WisconsinAutonomous/challenges/controls'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'stephen'), ('NAME', 'BOOK-GMRBBCFJSH'), ('WSL_INTEROP', '/run/WSL/21689_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-21.0.5.11-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Users/lijia/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lijia/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/lijia/.lmstudio/bin:/mnt/c/Users/lijia/AppData/Local/Muse Hub/lib:/mnt/c/Users/lijia/AppData/Local/Programs/Ollama:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/build/merge_arrays'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.367753] (merge_arrays) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.368262] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/lib/merge_arrays/merge_arrays_node\n'}
+[8.370514] (merge_arrays) StdoutLine: {'line': b'-- Set runtime path of "/home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/lib/merge_arrays/merge_arrays_node" to ""\n'}
+[8.370905] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/ament_index/resource_index/package_run_dependencies/merge_arrays\n'}
+[8.371053] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/ament_index/resource_index/parent_prefix_path/merge_arrays\n'}
+[8.371361] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/environment/ament_prefix_path.sh\n'}
+[8.371671] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/environment/ament_prefix_path.dsv\n'}
+[8.371748] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/environment/path.sh\n'}
+[8.371885] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/environment/path.dsv\n'}
+[8.371939] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/local_setup.bash\n'}
+[8.372045] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/local_setup.sh\n'}
+[8.372137] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/local_setup.zsh\n'}
+[8.372179] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/local_setup.dsv\n'}
+[8.372208] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/package.dsv\n'}
+[8.372350] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/ament_index/resource_index/packages/merge_arrays\n'}
+[8.372531] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/cmake/merge_arraysConfig.cmake\n'}
+[8.372626] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/cmake/merge_arraysConfig-version.cmake\n'}
+[8.372658] (merge_arrays) StdoutLine: {'line': b'-- Installing: /home/stephen/WisconsinAutonomous/challenges/controls/merge_arrays/install/merge_arrays/share/merge_arrays/package.xml\n'}
+[8.374416] (merge_arrays) CommandEnded: {'returncode': 0}
+[8.382933] (merge_arrays) JobEnded: {'identifier': 'merge_arrays', 'rc': 0}
+[8.383927] (-) EventReactorShutdown: {}
