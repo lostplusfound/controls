@@ -9,6 +9,7 @@
 """
 import typing
 from queue import PriorityQueue
+from collections import deque
 
 import numpy as np
 from typing import Dict
@@ -21,6 +22,44 @@ class PathPlanner:
         self.map_info: MapInfo = map_info
         self.destinations: typing.List["Destination"] = destinations
 
+    def neighbors(self, coord: Coordinate):
+        directions = [
+            (1, 0), (-1, 0), (0, 1), (0, -1), # cardinals
+            (1, 1), (1, -1), (-1, 1), (-1, -1) # diagonals
+        ]
+        width, height = self.map_info.risk_zones.shape
+        for de, dn in directions: 
+            newE, newN = coord.e + de, coord.n + dn 
+            if 0 <= newE < width and 0 <= newN < height and self.map_info.risk_zones[newE][newN] != 2:
+                yield Coordinate(newE, newN)
+
+    def bfs(self, start: Coordinate, goal: Coordinate):
+        q = deque([start])
+        came_from = {start: start}
+
+        while q:
+            curr = q.popleft()
+
+            if curr == goal:
+                break
+            for neighbor in self.neighbors(curr):
+                if neighbor not in came_from:
+                    came_from[neighbor] = curr
+                    q.append(neighbor)
+
+        if goal not in came_from:
+            return []
+        
+        path = []
+        curr = goal
+        while curr != start:
+            path.append(curr)
+            curr = came_from[curr]
+        path.append(start)
+        path.reverse()
+        return path
+
+
     def plan_paths(self):
         """
         This is the function you should re-write. It is expected to mutate the list of
@@ -30,9 +69,5 @@ class PathPlanner:
         The default construction shows this format, and should produce 10 invalid paths.
         """
         for site in self.destinations:
-            # YOUR CODE REPLACES THIS / WILL PLUG IN HERE
-            path_array = np.linspace(self.map_info.start_coord, site.coord, 10)
-            path_coords = [Coordinate(arr[0], arr[1]) for arr in path_array]
-
-            # Once you have a solution for the site - populate it like this:
+            path_coords = self.bfs(self.map_info.start_coord, site.coord)
             site.set_path(path_coords)
