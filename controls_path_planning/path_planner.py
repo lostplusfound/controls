@@ -8,6 +8,7 @@
         populated the Destination.path for each result you produce.
 """
 import typing
+import math
 from queue import PriorityQueue
 from collections import deque
 
@@ -32,6 +33,44 @@ class PathPlanner:
             newE, newN = coord.e + de, coord.n + dn 
             if 0 <= newE < width and 0 <= newN < height and self.map_info.risk_zones[newE][newN] != 2:
                 yield Coordinate(newE, newN)
+
+    def dijkstra(self, start: Coordinate, goal: Coordinate):
+        # Priority queue: (combined cost, risk, distance, coordinate)
+        pq = PriorityQueue()
+        pq.put((0, 0, 0, start))
+
+        best_cost = {start : 0}
+        came_from = {start : start}
+
+        while not pq.empty(): 
+            combined, dist, risk, curr = pq.get()
+
+            if curr == goal:
+                break
+
+            for neighbor in self.neighbors(curr):
+                step_risk = self.map_info.risk_zones[neighbor.e][neighbor.n]
+                step_dist = math.hypot(neighbor.e - curr.e, neighbor.n - curr.n)
+                new_dist = dist + step_dist
+                new_risk = risk + step_risk
+                new_combined = new_dist + new_risk # Weigh distance and risk equally
+
+                if new_dist <= self.map_info.maximum_range and (neighbor not in best_cost or new_combined < best_cost[neighbor]):
+                    best_cost[neighbor] = new_combined
+                    came_from[neighbor] = curr
+                    pq.put((new_combined, new_dist, new_risk, neighbor))
+            
+        if goal not in came_from:
+            return []
+        
+        path = []
+        curr = goal
+        while curr != start:
+            path.append(curr)
+            curr = came_from[curr]
+        path.append(start)
+        path.reverse()
+        return path
 
     def bfs(self, start: Coordinate, goal: Coordinate):
         q = deque([start])
@@ -69,5 +108,7 @@ class PathPlanner:
         The default construction shows this format, and should produce 10 invalid paths.
         """
         for site in self.destinations:
-            path_coords = self.bfs(self.map_info.start_coord, site.coord)
+            path_coords = self.dijkstra(self.map_info.start_coord, site.coord)
+            if path_coords == []:
+                path_coords = self.bfs(self.map_info.start_coord, site.coord)
             site.set_path(path_coords)
