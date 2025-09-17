@@ -11,23 +11,25 @@ public:
 
     // Subscribers
     sub1_ = this->create_subscription<std_msgs::msg::Int32MultiArray>("/input/array1", 10, std::bind(&MergeArraysNode::callBackArray1, this, std::placeholders::_1));
-
     sub2_ = this->create_subscription<std_msgs::msg::Int32MultiArray>("/input/array2", 10, std::bind(&MergeArraysNode::callBackArray2, this, std::placeholders::_1));
   }
 
 private:
+  // Callback for array1, store msg->data in array1 when we receive it, then try to merge arrays
   void callBackArray1(const std_msgs::msg::Int32MultiArray::SharedPtr msg)
   {
     array1_ = msg->data;
     tryMerge();
   }
 
+  // Callback for array2, store msg->data in array2 when we receive it, then try to merge arrays
   void callBackArray2(const std_msgs::msg::Int32MultiArray::SharedPtr msg)
   {
     array2_ = msg->data;
     tryMerge();
   }
 
+  // Try to merge array1 and array2 and publish the merged array
   void tryMerge()
   {
     // If an array has not been received, we cannot merge yet
@@ -40,12 +42,14 @@ private:
     publisher_->publish(merged_msg);
   }
 
-  // Helper to merge sorted arrays
+  // Helper to merge two sorted arrays into a resultant array that is also sorted
   std::vector<int32_t> mergeSorted(const std::vector<int32_t> &a, const std::vector<int32_t> &b)
   {
     std::vector<int32_t> result;
     size_t i = 0;
     size_t j = 0;
+    
+    // Basic approach to merging, compare a[i] and b[j], choose the smaller of the two, and increment the corresponding index
     while (i < a.size() && j < b.size())
     {
       if (a[i] < b[j])
