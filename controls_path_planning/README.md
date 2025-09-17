@@ -56,6 +56,7 @@ Total Risk + Distance: 479.63
 Despite working, BFS had clear limitations:
 - BFS only guarantees the optimal path if all step costs are equal. With Euclidean distance, diagonal steps cost √2 while cardinal steps cost 1.
 - BFS provides no mechanism to optimize for risk.
+
 To improve, I researched alternative algorithms and found A* and Dijkstra’s. After reviewing their descriptions on Wikipedia and asking clarifying questions to ChatGPT, I chose Dijkstra’s because it was easier to understand conceptually than A* (which relies on heuristics).
 #### Implementing Dijkstra’s Algorithm
 The core of Dijkstra’s algorithm is a min-priority queue that repeatedly selects the path with the lowest cost so far. The main challenge here was that each step had two costs: risk and distance. After consulting with ChatGPT, I resolved this by summing them, treating risk and distance equally (though weights could be applied if one cost needed to be emphasized over another).
