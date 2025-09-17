@@ -1,7 +1,7 @@
 # Path Planning Writeup
 
 #### Note
-I had issues displaying a plot of my paths and outputting a results_fig.png file with my paths when running `test_planner.py`, so unfortunately I only have `results.yaml` as output.
+I had issues displaying a plot of my paths and outputting a `results_fig.png` file with my paths when running `test_planner.py`, so unfortunately I only have `results.yaml` as output.
 #### Introduction
 This writeup documents my solution to the Risk-Aware Planning coding challenge. 
 #### Initial Approach
@@ -58,8 +58,8 @@ Despite working, BFS had clear limitations:
 - BFS provides no mechanism to optimize for risk.
 To improve, I researched alternative algorithms and found A* and Dijkstra’s. After reviewing their descriptions on Wikipedia and asking clarifying questions to ChatGPT, I chose Dijkstra’s because it was easier to understand conceptually than A* (which relies on heuristics).
 #### Implementing Dijkstra’s Algorithm
-The core of Dijkstra’s algorithm is a min-priority queue that repeatedly selects the path with the lowest cost so far. The main challenge here was that each step had two costs: risk and distance. After consulting with ChatGPT, I resolved this by summing them, treating risk and distance equally (though weights could be applied if one needed more emphasis).
-The resulting implementation was structurally similar to BFS, but used a priority queue instead of a standard queue:
+The core of Dijkstra’s algorithm is a min-priority queue that repeatedly selects the path with the lowest cost so far. The main challenge here was that each step had two costs: risk and distance. After consulting with ChatGPT, I resolved this by summing them, treating risk and distance equally (though weights could be applied if one cost needed to be emphasized over another).
+The resulting implementation was structurally quite similar to BFS, but used a priority queue instead of a standard queue:
 ```# Dijkstra's algorithm, modified to consider both risk and distance
 def dijkstra(self, start: Coordinate, goal: Coordinate):
     # Priority queue: (combined cost, distance, risk, coordinate)
