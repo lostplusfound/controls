@@ -1,5 +1,9 @@
+# Path Planning Writeup
+
+#### Note
+I had issues displaying a plot of my paths and outputting a results_fig.png file with my paths when running `test_planner.py`, so unfortunately I only have `results.yaml` as output.
 #### Introduction
-This writeup documents my solution to the Risk-Aware Planning coding challenge.
+This writeup documents my solution to the Risk-Aware Planning coding challenge. 
 #### Initial Approach
 My first idea after reading the problem statement was to apply breadth-first search (BFS). For each goal, I would run BFS starting from the initial position until reaching the goal. BFS guarantees the path with the fewest steps, so I was confident it would produce valid solutions. Since I was already familiar with BFS, I implemented it quickly.
 ```# BFS solution: not the most optimal, but always finds a valid path
